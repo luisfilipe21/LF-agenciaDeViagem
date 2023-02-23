@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.limita-secao{
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    width: 100%;
+    color: #5d15d1;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.cabecalho img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.secao-capa{
+    background-image: url("bahia.jpg");
+    background-size: cover;
+    height: auto;
+    width: 100%
+}
+
+.secao-formulario{
+    padding: 50px 0;
+
+}
+
+.secao-formulario h2{
+    font-size: 26px;
+    color: white;
+    background-color: #5d15d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.secao-formulario h2::before{
+    content: "";
+    background-image: url("aviao.png");
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    transform: rotate(300deg);
+}
+
+.formulario{
+    background-color: white;
+    height: auto;
+    text-align: left;
+    padding: 30px 25px 20px 25px;
+}
+
+.formulario h3{
+    font-size: 22px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.formulario section{
+    margin-bottom: 10px;
+}
+
+.formulario input{
+    display: flex;
+    width: 90%;
+    line-height: 20px;
+    padding: 3px 0;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.formulario .dia-viagem{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 44%;
+    margin-bottom: 15px;
+}
+
+.formulario .destino{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.formulario label{
+    padding: 10px 0;
+}
+
+.formulario .quartos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.quartos div{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: auto;
+        margin-top: 10px;
+}
+
+.preferencias{
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    justify-content: flex-start;
+}
+
+.preferencias div{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: auto;;
+}
+
+button{
+    background-color: #5d15d1;
+    color: white;;
+    border: none;
+    font-size: 16px;
+    margin-top: 12px;
+    border-radius: 5px;
+    width: 160px;
+    height: 32px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #8d19d6;
+}
+
+/* segunda secao */
+main{
+    background-color: #80808029;
+}
+
+
+.secao-ofertas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto;
+}
+
+.secao-ofertas h3{
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.secao-ofertas p{
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.secao-ofertas p span{
+    font-weight: bold;
+}
+
+.ofertas-div{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div{
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.imagens{
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.imagens figure{
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.div img, .imagens img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.div img:hover, .imagens img:hover, .anuncios img:hover{
+    opacity: 0.5;
+}
+
+.ofertas-div figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(0 0 0 / 50%);
+    width: 100%;
+    font-size: 17px;
+    text-align: left;
+    color: #fff;
+
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.imagens figcaption{
+    color: #fff;
+}
+
+/* anuncios */
+
+.secao-anuncios{
+    padding: 20px 0;
+}
+.secao-anuncios h3{
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px ;
+}
+
+.secao-anuncios p{
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.secao-anuncios .anuncios{
+    display: flex;
+    margin-bottom: 20px;
+    box-sizing: border-box
+}
+
+.secao-anuncios .anuncios img{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.anuncios div{
+    margin: 0 10px;
+}
+
+.anuncios figcaption{
+    border: 1px solid white;
+    line-height: 24px; 
+    color:gray;
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+}
+
+figcaption::first-line{
+    font-weight: bold;
+    color: black;
+}
+
+/* rodape */
+footer{
+    background-color: #5d15d1;
+    color: white;
+}
+
+.rodape{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+}
+
+.rodape p{
+    padding: 5px 0;
+}
+
+.rodape h3{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.rodape-redes, .rodape-info{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* responsivo */
+
+@media screen and (min-width:1101px) {
+    .limita-secao{
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:1100px){
+    .limita-secao{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:541px) and (max-width:768px){
+    button{
+        width: 100%;
+        text-align: center;
+    }
+    .ofertas-div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .imagens{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div{
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .imagens figure{
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .anuncios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape h3{
+        text-align: center;
+    }
+
+    .rodape-redes, .rodape-info{
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:540px){
+    .secao-formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .secao-formulario h2{
+        width: 77%;
+    }
+    button{
+        width: 100%;
+        text-align: center;
+    }
+    .ofertas-div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .imagens{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div{
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .imagens figure{
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .anuncios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape h3{
+        text-align: center;
+    }
+
+    .rodape-redes, .rodape-info{
+        width: 300px;
+    }
+}
